@@ -1,0 +1,40 @@
+.section-title {
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--primary-title-color);
+}
+
+.section-title::before {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 20px;
+  margin-bottom: 24px;
+  background: url('/img/title-decoration.svg') center / contain no-repeat;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-title.center::before {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .section-header {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,33 @@
+:root {
+  /* Fonts */
+  --main-font-family: 'Mulish', sans-serif;
+  --secondary-font-family: 'Cormorant', sans-serif;
+
+  /* Text colors */
+  --main-text-color: #000000;
+  --secondary-text-color: #ffffff;
+
+  /* Title text color */
+  --primary-title-color: #000000;
+  --secondary-title-color: #ffffff;
+
+  /* Background colors */
+  --first-background-color: #fbf9f1;
+  --second-background-color: #faf7e6;
+
+  /* Primary link color */
+  --link-color: #000000;
+  --link-hover-bg-color: rgba(0, 0, 0, 0.15);
+  --link-active-color: #b09a0c;
+  --link-disabled-color: #000000;
+
+  /* Button colors */
+  --button-text-color: #000000;
+
+  --button-color: #dcc110;
+  --button-hover-color: #ffffff;
+  --button-active-color: #e6d357;
+
+  /* Transition function */
+  --transition-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

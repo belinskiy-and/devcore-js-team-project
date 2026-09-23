@@ -5,14 +5,25 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/utilities.css');
+@import url('./base/common.css');
+@import url('./base/container.css');
+
+/* Components styles */
+@import url('./components/section-title.css');
+@import url('./components/button.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/about.css');
+@import url('./layout/benefits.css');
+@import url('./layout/feedbacks.css');
+@import url('./layout/portfolio.css');
+@import url('./layout/faq.css');
+@import url('./layout/contacts.css');
+@import url('./layout/footer.css');
+@import url('./layout/mobile-menu.css');
+@import url('./layout/success-modal.css');

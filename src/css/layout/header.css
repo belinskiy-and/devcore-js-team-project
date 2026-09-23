@@ -1,0 +1,11 @@
+/* Styles for Mobile devices */
+.header {
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+}
