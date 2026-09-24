@@ -1,9 +1,85 @@
 /* Styles for Mobile devices */
 .mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: var(--first-background-color);
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  transition:
+    opacity var(--transition-function),
+    visibility var(--transition-function);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-logo-link {
+  display: block;
+  width: 70px;
+  height: 60px;
+}
+
+.mobile-logo-image {
+  width: 100%;
+}
+
+.mobile-close-button {
+  border: none;
+  background-color: inherit;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button-icon {
+  fill: #000000;
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu-list {
+  padding: 16px 0;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: 12px 0;
+
+  font-size: 18px;
+}
+
+.mobile-menu-link.button {
+  padding: 10px 0;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 /* Styles for Desktop devices */

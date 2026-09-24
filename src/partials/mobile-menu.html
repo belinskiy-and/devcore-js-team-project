@@ -1,9 +1,31 @@
-<div class="mobile-menu-wrapper is-hidden" id="mobile-menu">
-  <div class="mobile-menu">
-    <!-- remove this block -->
-    <p style="font-size: 20px; font-weight: 700; text-align: center">
-      mobile-menu
-    </p>
-    <!-- /remove this block -->
+<div class="mobile-menu js-mobile-menu" id="mobile-menu">
+  <div class="container">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="mobile-logo-link">
+        <img class="mobile-logo-image" src="/img/logo.svg" alt="Site logo" />
+      </a>
+      <button class="mobile-close-button js-close-mobile-menu" type="button">
+        <svg class="close-button-icon">
+          <use href="/img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-menu-list js-mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a href="#about" class="mobile-menu-link">About Me</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#benefits" class="mobile-menu-link">Benefits</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#faq" class="mobile-menu-link">FAQ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#contacts" class="mobile-menu-link button">Book a Session</a>
+      </li>
+    </ul>
   </div>
 </div>
