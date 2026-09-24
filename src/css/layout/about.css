@@ -1,5 +1,30 @@
 /* Styles for Mobile devices */
 .about-section {
+  text-align: center;
+}
+
+.about-content {
+  margin-bottom: 40px;
+}
+
+.about-decor {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.about-title {
+  margin-bottom: 24px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
 }
 
 /* Styles for Tablet devices */
