@@ -27,14 +27,11 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .section-title {
-    font-size: 28px;
-  }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .section-header {
-    font-size: 40px;
+    font-size: 48px;
   }
 }
