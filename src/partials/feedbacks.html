@@ -1,9 +1,71 @@
-<section class="feedbacks-section is-hidden" id="feedbacks">
-  <div class="container">
-    <!-- remove this block -->
-    <p style="font-size: 20px; font-weight: 700; text-align: center">
-      feedbacks section
+<section class="feedbacks-section" id="feedbacks">
+  <div class="container feedback-container">
+    <h2 class="section-title center feedback-title" id="feedback-title">
+      Words from Our Wonderful Couples
+    </h2>
+    <p class="feedback-description">
+      Read what the couples who entrusted us with their most precious memories
+      have to say.
     </p>
-    <!-- /remove this block -->
+    <p class="feedback-status" role="status" data-feedback-status>
+      Loading reviews…
+    </p>
+    <button
+      class="button feedback-retry"
+      type="button"
+      data-feedback-retry
+      hidden
+    >
+      Try again
+    </button>
+    <div
+      class="swiper feedback-slider"
+      tabindex="0"
+      role="group"
+      aria-label="Couples’ reviews. Use the left and right arrow keys."
+      aria-roledescription="carousel"
+      aria-busy="true"
+      hidden
+    >
+      <ul class="swiper-wrapper feedback-list" id="feedback-list"></ul>
+    </div>
+    <div class="feedback-controls" hidden>
+      <div
+        class="feedback-pagination"
+        role="group"
+        aria-label="Choose a review"
+      ></div>
+      <div
+        class="feedback-navigation"
+        role="group"
+        aria-label="Review navigation"
+      >
+        <button
+          class="feedback-arrow"
+          type="button"
+          data-feedback-prev
+          aria-label="Previous reviews"
+          aria-controls="feedback-list"
+          disabled
+        >
+          <svg width="24" height="24" aria-hidden="true" focusable="false">
+            <use href="/img/sprite.svg#icon-arrow_back"></use>
+          </svg>
+        </button>
+        <button
+          class="feedback-arrow"
+          type="button"
+          data-feedback-next
+          aria-label="Next reviews"
+          aria-controls="feedback-list"
+          disabled
+        >
+          <svg width="24" height="24" aria-hidden="true" focusable="false">
+            <use href="/img/sprite.svg#icon-arrow_forward"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <noscript>Enable JavaScript to view couples’ reviews.</noscript>
   </div>
 </section>
