@@ -1,20 +1,14 @@
 /* Styles for Mobile devices */
 .footer {
-    padding-bottom: 32px;
+    padding: 48px 20px;
     color: var(--main-text-color);
 }
 
 .footer-content {
     border: 1px solid var(--main-text-color);
     border-radius: 16px;
-    padding: 32px 24px;
+    padding: 48px 20px;
     background-color: var(--first-background-color);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-
     text-align: center;
 }
 
@@ -22,6 +16,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 24px;
+}
+
+.footer-nav {
+    margin-bottom: 24px;
 }
 
 .footer-logo {
@@ -31,16 +30,18 @@
 
 .footer-logo-img {
     display: block;
-    width: 96px;
+    width: 206px;
     height: auto;
 }
 
 .footer-copy {
     margin: 0;
+    font-size: 14px;
 }
 
 .footer-title {
-    margin: 0 0 12px;
+    margin: 0 0 16px;
+    font-weight: 600;
 }
 
 .footer-menu,
@@ -53,7 +54,7 @@
 .footer-menu {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 32px;
 }
 
 
@@ -64,34 +65,42 @@
 }
 
 .footer-social-list {
-    gap: 10px;
-}
-
-.footer-social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    gap: 12px;
 }
 
 .footer-social-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     fill: currentColor;
+    vertical-align: middle;
+}
+
+.footer-social-link span {
+    margin-left: 12px;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+    .footer {
+        padding: 48px 32px;
+    }
+
     .footer-content {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 32px;
+        padding: 48px;
         text-align: left;
     }
 
     .footer-brand {
         align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .footer-logo-img {
+        width: 128px;
     }
 
     .footer-nav,
@@ -99,21 +108,26 @@
         text-align: left;
     }
 
-    .footer-social-link {
-        justify-content: flex-start;
+    .footer-nav {
+        margin-bottom: 0;
     }
+
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+    .footer {
+        padding: 80px 64px;
+    }
+
     .footer-content {
         display: grid;
         grid-template-columns: 1fr auto auto;
         column-gap: 64px;
-        padding: 40px 48px;
+        padding: 48px;
     }
 
     .footer-logo-img {
-        width: 112px;
+        width: 128px;
     }
 }
