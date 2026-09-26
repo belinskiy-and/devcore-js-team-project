@@ -1,11 +1,144 @@
 /* Styles for Mobile devices */
 .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 32px 0;
+    padding: 0;
+}
+
+.portfolio-categories-btn button{
+    padding: 10px 16px;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    cursor: pointer; 
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+
+.portfolio-categories-btn button:active,
+.portfolio-categories-btn button:hover
+.portfolio-categories-btn button:focus
+.active{
+    border: 2px solid var(--main-text-color);
+    background-color: var(--secondary-text-color);
+    outline: none;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+    gap: 16px;
+    padding: 0;
+}
+
+.portfolio-photo {
+    border-radius: 16px;
+    height: 335px;
+    width: 335px;
+    overflow: hidden;
+}
+
+.portfolio-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-button {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+}
+
+.loader.is-hidden {
+  display: none;
+}
+
+.loader-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+
+.portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+    margin-bottom: 24px;
+}
+
+.portfolio-photo {
+    width: calc((100% - 24px) / 2);
+}
+
+.show-more-btn{
+    width: 310px;
+}
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+
+.portfolio-section {
+  padding-top: 92px;
+  padding-bottom: 0;
+}
+
+.portfolio-title {
+    font-size: 48px;
+}
+
+.portfolio-filter {
+    margin-bottom: 92px;
+}
+
+.portfolio-photo {
+    width: calc((100% - 48px) / 3);
+}
+
 }
