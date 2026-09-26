@@ -1,11 +1,142 @@
 /* Styles for Mobile devices */
 .footer {
+    padding: 48px 20px;
+    color: var(--main-text-color);
+}
+
+.footer-content {
+    border: 2px solid var(--main-text-color);
+    border-radius: 16px;
+    padding: 48px 20px;
+    background-color: var(--first-background-color);
+    text-align: center;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.footer-nav {
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.footer-logo-img {
+    display: block;
+    width: 206px;
+    height: auto;
+}
+
+.footer-copy {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-title {
+    margin: 0 0 16px;
+    font-weight: 600;
+}
+
+.footer-link,
+.footer-social-link {
+    padding: 0;
+}
+
+.footer-social-link {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.footer-menu,
+.footer-social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.footer-menu,
+.footer-social-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.footer-social-link span {
+    margin-left: 12px;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+    .footer {
+        padding: 48px 32px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 48px;
+        text-align: left;
+    }
+
+    .footer-brand {
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .footer-logo-img {
+        width: 128px;
+    }
+
+    .footer-nav,
+    .footer-social {
+        text-align: left;
+    }
+
+    .footer-nav {
+        margin-bottom: 0;
+    }
+
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+    .footer {
+        padding: 80px 64px;
+    }
+
+    .footer-content {
+        padding: 48px;
+        gap: 40px;
+    }
+
+    .footer-nav {
+        margin-left: auto;
+    }
+
+    .footer-logo-img {
+        width: 128px;
+    }
 }
